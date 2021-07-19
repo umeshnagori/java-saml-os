@@ -1,6 +1,7 @@
 # OneLogin's SAML Java Toolkit
 
 [![Build Status](https://travis-ci.org/onelogin/java-saml.svg?branch=master)](https://travis-ci.org/onelogin/java-saml) [![Coverage Status](https://coveralls.io/repos/github/onelogin/java-saml/badge.svg?branch=master)](https://coveralls.io/github/onelogin/java-saml?branch=master)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fumeshnagori%2Fjava-saml-os.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fumeshnagori%2Fjava-saml-os?ref=badge_shield)
 
 Add SAML support to your Java applications using this library.
 Forget those complicated libraries and use that open source library provided and supported by OneLogin Inc.
@@ -686,3 +687,7 @@ Lets imagine we deploy the jsp example project at *http://localhost:8080/java-sa
   3.1. SLO Initiated by SP. Click on the "logout" link at the SP, after that we are redirected to the /dologout.jsp view where a Logout Request is sent to the IdP, the session at the IdP is closed and replies to the SP a Logout Response (sent to the Single Logout Service endpoint). The SLS endpoint /sls.jsp of the SP process the Logout Response and if is valid, close the user session of the local app. Notice that the SLO Workflow starts and ends at the SP.
 
   3.2. SLO Initiated by IdP. In this case, the action takes place on the IdP side, the logout process is initiated at the IdP, it sends a Logout Request to the SP (SLS endpoint, /sls.jsp). The SLS endpoint of the SP process the Logout Request and if is valid, close the session of the user at the local app and send a Logout Response to the IdP (to the SLS endpoint of the IdP). The IdP receives the Logout Response, process it and close the session at the IdP. Notice that the SLO Workflow starts and ends at the IdP.
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fumeshnagori%2Fjava-saml-os.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fumeshnagori%2Fjava-saml-os?ref=badge_large)
